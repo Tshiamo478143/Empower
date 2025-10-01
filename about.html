@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Empowering the Nation</title>
+    <style>
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d3748;
+            --accent-orange: #ed8936;
+            --accent-green: #38a169;
+            --text-light: #f8f9fa;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav {
+            background: var(--secondary-blue);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--accent-orange);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .mission-card, .vision-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .team-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-card h4 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--accent-orange);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background: var(--secondary-blue);
+        }
+
+        .footer {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .content-section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>EMPOWER</h1>
+        <p>Empowering the nation</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="Home_page.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="short_courses.html" class="nav-link">Short Courses</a>
+            <a href="six_month_courses.html" class="nav-link">Six Month Courses</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">About Empowering the Nation</h1>
+        <p class="page-subtitle">Transforming lives through skills development and education since 2022</p>
+
+        <!-- Our Story Section -->
+        <section class="content-section">
+            <h2 class="section-title">Our Story</h2>
+            <p>Empowering the Nation was established in 2022 with a clear vision: to provide accessible, quality education and skills training to domestic workers and gardeners in Johannesburg. We recognized the immense potential within these communities and the opportunity to create meaningful change through practical skills development.</p>
+            
+            <p>What started as a small initiative has grown into a comprehensive training organization that has transformed hundreds of lives. Our programs are specifically designed to address the unique challenges faced by domestic workers and gardeners, providing them with marketable skills that lead to better employment opportunities and improved livelihoods.</p>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="content-section">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <h3>Our Mission</h3>
+                    <p>To empower domestic workers and gardeners with practical skills and knowledge that enhance their employability, increase their earning potential, and improve their quality of life through accessible, high-quality training programs.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p>To create a nation where every domestic worker and gardener has the opportunity to develop marketable skills, achieve financial independence, and contribute meaningfully to South Africa's economy and society.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Statistics -->
+        <section class="content-section">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Trained Individuals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Years of Service</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Course Programs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Employment Rate</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="content-section">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>Precious M.</h4>
+                    <div class="team-role">Founder & Director</div>
+                    <p>With over 10 years in community development, Precious leads our vision and strategic direction.</p>
+                </div>
+                <div class="team-card">
+                    <h4>David K.</h4>
+                    <div class="team-role">Training Coordinator</div>
+                    <p>David ensures our courses meet industry standards and student needs.</p>
+                </div>
+                <div class="team-card">
+                    <h4>Sarah T.</h4>
+                    <div class="team-role">Student Support</div>
+                    <p>Sarah provides guidance and support to all our students throughout their journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center;">
+            <a href="Home_page.html" class="back-button">← Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <p>Johannesburg, South Africa</p>
+    </footer>
+</body>
+</html>

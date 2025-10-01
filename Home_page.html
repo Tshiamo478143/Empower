@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <style>
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d3748;
+            --accent-orange: #ed8936;
+            --accent-green: #38a169;
+            --text-light: #f8f9fa;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--secondary-blue);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .learn-more-btn {
+    display: inline-block;
+    background: #ed8936;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+        }
+
+    .learn-more-btn:hover {
+    background: #dd7733;
+        }
+
+        .hero {
+            background: var(--secondary-blue);
+            color: var(--text-light);
+            padding: 3rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .apply-button {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .apply-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Courses Grid */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .course-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Progress Section */
+.progress-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--accent-green);
+    width: 5%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-text {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+        /* Registration Form */
+        .registration-form {
+            background: var(--primary-blue);
+            color: white;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .signup-button {
+            background: var(--accent-green);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>EMPOWER</h1>
+        <p>Empowering the nation</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">Empowering the Nation</div>
+            <ul class="nav-links">
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>Welcome to Empowering the Nation</h2>
+            <p>Founded in 2022 in Johannesburg, we offer Six-Month Learnerships and Short Skills Training Programmes 
+               to empower domestic workers and gardeners with marketable skills.</p>
+            <a href="#register" class="apply-button">Apply Now</a>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+           <h2>Our Programs</h2>
+    <div class="courses-grid">
+        <div class="course-card">
+            <h3>Short Courses</h3>
+            <p>6-week intensive training programs designed to quickly boost your skills and earnings potential.</p>
+            <p><strong>Focus:</strong> Immediate skill application</p>
+            <a href="short_courses.html" class="learn-more-btn">Learn More →</a>
+        </div>
+    </div>
+                <div class="course-card">
+                    <h3>Six Month Courses</h3>
+                    <p>Comprehensive learnerships combining classroom instruction with workplace experience.</p>
+                    <p><strong>Focus:</strong> Long-term career development</p>
+                    <a href="SIx_month_courses.html" class="learn-more-btn">Learn More →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+            <h2>Your Learning Journey</h2>
+            <p>Current Progress: <strong>5% Complete</strong></p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p>Continue your journey towards empowerment and skill development.</p>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="registration-form" id="register">
+            <h2>Create Your Account</h2>
+            <p>Join hundreds of domestic workers and gardeners who have transformed their lives.</p>
+            
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="id">ID/PASSPORT NUMBER</label>
+                    <input type="text" id="id" placeholder="Your ID or passport number" required>
+                </div>
+                
+                <button type="submit" class="signup-button">Sign Up Now</button>
+                <a href="#apply" class="apply-button" style="text-align: center; display: block;">Apply for Courses</a>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <p>Johannesburg, South Africa</p>
+    </footer>
+
+    <script>
+        // Form validation
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const id = document.getElementById('id').value;
+            
+            // Basic validation
+            if (name && email && password && id) {
+                alert('Registration successful! We will contact you soon.');
+                // Here you would typically send data to a server
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

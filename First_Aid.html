@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Course - Empowering the Nation</title>
+    <style>
+        /* Same CSS structure as previous pages */
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d3748;
+            --accent-orange: #ed8936;
+            --accent-green: #38a169;
+            --text-light: #f8f9fa;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #f5f5f5; }
+        .header { background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); color: var(--text-light); padding: 2rem 0; text-align: center; }
+        .nav { background: var(--secondary-blue); padding: 1rem 0; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; padding: 0 2rem; }
+        .nav-link { color: var(--text-light); text-decoration: none; font-weight: 500; font-size: 1.1rem; padding: 0.5rem 1rem; border-radius: 5px; transition: background-color 0.3s; }
+        .nav-link:hover { background-color: var(--accent-orange); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .course-header { background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .course-title { color: var(--primary-blue); margin-bottom: 1rem; }
+        .course-meta { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+        .meta-item { background: var(--primary-blue); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
+        .course-content { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 2rem; }
+        .content-section { margin-bottom: 2rem; }
+        .content-section h3 { color: var(--primary-blue); margin-bottom: 1rem; }
+        .content-section ul { list-style-position: inside; margin-left: 1rem; }
+        .content-section li { margin-bottom: 0.5rem; color: var(--text-gray); }
+        .navigation-buttons { display: flex; justify-content: space-between; margin-top: 2rem; }
+        .nav-button { background: var(--primary-blue); color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; transition: background-color 0.3s; }
+        .nav-button:hover { background: var(--secondary-blue); }
+        .footer { background: var(--primary-blue); color: var(--text-light); text-align: center; padding: 2rem 0; margin-top: 3rem; }
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 1rem; text-align: center; }
+            .container { padding: 1rem; }
+            .course-meta { flex-direction: column; gap: 1rem; }
+            .navigation-buttons { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>EMPOWER</h1>
+        <p>Empowering the nation</p>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="Home_page.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="short_courses.html" class="nav-link">Short Courses</a>
+            <a href="six_month_courses.html" class="nav-link">Six Month Courses</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="course-header">
+            <h1 class="course-title">First Aid Course</h1>
+            <div class="course-meta">
+                <span class="meta-item">6 Months</span>
+                <span class="meta-item">Comprehensive Training</span>
+                <span class="meta-item">Certified Program</span>
+            </div>
+            <p>Comprehensive emergency response and life-saving skills training</p>
+        </div>
+
+        <div class="course-content">
+            <div class="content-section">
+                <h3>Course Overview</h3>
+                <p>This comprehensive first aid course provides you with essential life-saving skills and emergency response training. Learn to handle medical emergencies confidently and professionally in various settings.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>What You'll Learn</h3>
+                <ul>
+                    <li>CPR and resuscitation techniques</li>
+                    <li>Emergency response procedures</li>
+                    <li>Wound care and bandaging</li>
+                    <li>Fracture and sprain management</li>
+                    <li>Emergency childbirth procedures</li>
+                    <li>Poisoning and overdose response</li>
+                    <li>Emergency equipment operation</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Career Opportunities</h3>
+                <ul>
+                    <li>Certified First Aid Responder</li>
+                    <li>Workplace Safety Officer</li>
+                    <li>Community Health Worker</li>
+                    <li>Event Medical Staff</li>
+                    <li>First Aid Trainer</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Certification</h3>
+                <ul>
+                    <li>Level 3 First Aid Certification</li>
+                    <li>CPR and AED Certification</li>
+                    <li>Emergency Response Certificate</li>
+                    <li>Workplace Safety Compliance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="six_month_courses.html" class="nav-button">← Back to Six Month Courses</a>
+            <a href="Home_page.html" class="nav-button">Back to Home</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <p>Johannesburg, South Africa</p>
+    </footer>
+</body>
+</html>

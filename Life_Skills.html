@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Skills Course - Empowering the Nation</title>
+    <style>
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d3748;
+            --accent-orange: #ed8936;
+            --accent-green: #38a169;
+            --text-light: #f8f9fa;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .nav {
+            background: var(--secondary-blue);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--accent-orange);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .course-header {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-title {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .meta-item {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .course-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 2rem;
+        }
+
+        .content-section h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .content-section ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+            color: var(--text-gray);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .skill-category h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .benefits-list {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .nav-button {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background: var(--secondary-blue);
+        }
+
+        .footer {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .course-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .navigation-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>EMPOWER</h1>
+        <p>Empowering the nation</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="Home_page.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="short_courses.html" class="nav-link">Short Courses</a>
+            <a href="six_month_courses.html" class="nav-link">Six Month Courses</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="course-header">
+            <h1 class="course-title">Life Skills Course</h1>
+            <div class="course-meta">
+                <span class="meta-item">6 Months</span>
+                <span class="meta-item">Personal Development</span>
+                <span class="meta-item">Career Preparation</span>
+            </div>
+            <p>Essential personal and professional development skills for career growth and life success</p>
+        </div>
+
+        <div class="course-content">
+            <div class="content-section">
+                <h3>Course Overview</h3>
+                <p>This comprehensive life skills course is designed to equip you with essential personal and professional competencies needed for success in both career and personal life. Learn practical skills that enhance employability, improve relationships, and build confidence for lifelong success.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Core Skill Areas</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Communication Skills</h4>
+                        <ul>
+                            <li>Effective verbal and written communication</li>
+                            <li>Active listening techniques</li>
+                            <li>Public speaking and presentation skills</li>
+                            <li>Conflict resolution and negotiation</li>
+                            <li>Professional email and phone etiquette</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Financial Literacy</h4>
+                        <ul>
+                            <li>Personal budgeting and money management</li>
+                            <li>Banking and savings strategies</li>
+                            <li>Understanding credit and loans</li>
+                            <li>Basic investment principles</li>
+                            <li>Financial goal setting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Career Development</h4>
+                        <ul>
+                            <li>CV writing and job application skills</li>
+                            <li>Interview preparation and techniques</li>
+                            <li>Professional networking</li>
+                            <li>Workplace ethics and conduct</li>
+                            <li>Career planning and advancement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Personal Management</h4>
+                        <ul>
+                            <li>Time management and organization</li>
+                            <li>Goal setting and achievement</li>
+                            <li>Stress management techniques</li>
+                            <li>Problem-solving and decision making</li>
+                            <li>Self-confidence building</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Digital Literacy</h4>
+                        <ul>
+                            <li>Basic computer skills</li>
+                            <li>Internet and email proficiency</li>
+                            <li>Microsoft Office applications</li>
+                            <li>Online safety and security</li>
+                            <li>Social media for professional use</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Health & Wellness</h4>
+                        <ul>
+                            <li>Basic health and nutrition</li>
+                            <li>Physical fitness fundamentals</li>
+                            <li>Mental health awareness</li>
+                            <li>Healthy relationship building</li>
+                            <li>Work-life balance strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Career Opportunities</h3>
+                <ul>
+                    <li>Office Administrator</li>
+                    <li>Customer Service Representative</li>
+                    <li>Retail Supervisor</li>
+                    <li>Team Leader positions</li>
+                    <li>Entry-level management roles</li>
+                    <li>Community Outreach Worker</li>
+                    <li>Various service industry positions</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Course Benefits</h3>
+                <div class="benefits-list">
+                    <ul>
+                        <li>Increased employability across multiple industries</li>
+                        <li>Improved confidence in professional settings</li>
+                        <li>Better financial management and independence</li>
+                        <li>Enhanced personal relationships</li>
+                        <li>Stronger problem-solving abilities</li>
+                        <li>Certificate of completion for job applications</li>
+                        <li>Ongoing career support and guidance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Practical Learning Approach</h3>
+                <ul>
+                    <li>Interactive workshops and role-playing exercises</li>
+                    <li>Real-world scenario simulations</li>
+                    <li>Personal development projects</li>
+                    <li>One-on-one coaching sessions</li>
+                    <li>Group discussions and peer learning</li>
+                    <li>Career portfolio development</li>
+                    <li>Mock interviews and assessment centers</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Who Should Attend</h3>
+                <ul>
+                    <li>School leavers entering the workforce</li>
+                    <li>Individuals seeking career changes</li>
+                    <li>People returning to work after a break</li>
+                    <li>Anyone wanting to improve life management skills</li>
+                    <li>Individuals preparing for leadership roles</li>
+                    <li>Those seeking personal growth and development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="six_month_courses.html" class="nav-button">← Back to Six Month Courses</a>
+            <a href="Home_page.html" class="nav-button">Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <p>Johannesburg, South Africa</p>
+    </footer>
+</body>
+</html>

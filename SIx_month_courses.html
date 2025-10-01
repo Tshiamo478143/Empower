@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Month Courses - Empowering the Nation</title>
+    <style>
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d3748;
+            --accent-orange: #ed8936;
+            --accent-green: #38a169;
+            --text-light: #f8f9fa;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav {
+            background: var(--secondary-blue);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--accent-orange);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            color: var(--primary-blue);
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .course-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            border-top: 4px solid var(--primary-blue);
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .course-card p {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .course-duration {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background: var(--secondary-blue);
+        }
+
+        .footer {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>EMPOWER</h1>
+        <p>Empowering the nation</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="Home_page.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="short_courses.html" class="nav-link">Short Courses</a>
+            <a href="six_month_courses.html" class="nav-link">Six Month Courses</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">Six Month Courses</h1>
+        <p class="page-subtitle">Comprehensive learnerships combining classroom instruction with workplace experience</p>
+
+        <div class="courses-grid">
+            <!-- First Aid -->
+            <a href="First_Aid.html" class="course-card">
+                <h3>First Aid</h3>
+                <p>Comprehensive emergency response training and certified first aid procedures.</p>
+                <span class="course-duration">6 Months</span>
+            </a>
+
+            <!-- Land Scaping -->
+            <a href="Land_Scaping.html" class="course-card">
+                <h3>Land Scaping</h3>
+                <p>Professional landscape design, installation, and maintenance techniques.</p>
+                <span class="course-duration">6 Months</span>
+            </a>
+
+            <!-- Life Skills -->
+            <a href="Life_Skills.html" class="course-card">
+                <h3>Life Skills</h3>
+                <p>Essential personal and professional development skills for career growth.</p>
+                <span class="course-duration">6 Months</span>
+            </a>
+
+            <!-- Sewing -->
+            <a href="Sewing.html" class="course-card">
+                <h3>Sewing</h3>
+                <p>Complete garment construction, alteration, and textile skills training.</p>
+                <span class="course-duration">6 Months</span>
+            </a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="Home_page.html" class="back-button">← Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <p>Johannesburg, South Africa</p>
+    </footer>
+</body>
+</html>
